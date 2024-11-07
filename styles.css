@@ -1,0 +1,139 @@
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  background-color: hsl(30, 54%, 90%);
+  color: hsl(30, 10%, 34%);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container p,
+.preparation-time,
+.ingredients,
+.instructions,
+.nutrition {
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+header h1 {
+  font-family: "Young Serif", serif;
+  color: hsl(24, 5%, 18%);
+}
+
+.preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.preparation-time h2, .preparation-time ul::before {
+  color: hsl(332, 51%, 32%);
+}
+
+.preparation-time li {
+  margin: 10px 10px;
+  list-style-type: none;
+  position: relative; 
+  padding-left: 25px; 
+}
+
+.preparation-time span {
+  color: hsl(30, 10%, 34%);
+  font-weight: 600;
+}
+
+.preparation-time li::before {
+  content: '•';
+  position: absolute;
+  left: 0; 
+  top: 0; 
+  font-size: 20px; 
+  color: hsl(332, 51%, 32%);
+}
+
+.ingredients li {
+  margin: 10px 10px;
+  list-style-type: none;
+  position: relative; 
+  padding-left: 25px; 
+}
+
+.ingredients li::before {
+  content: '•';
+  position: absolute;
+  left: 0; 
+  top: 0; 
+  font-size: 20px; 
+  color: hsl(14, 45%, 36%);
+}
+
+.ingredients h2,
+.instructions h2,
+.nutrition h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+
+.instructions span {
+  color: hsl(30, 10%, 34%);
+  font-weight: 600;
+}
+
+.instructions ol {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.instructions li {
+  position: relative;
+  padding: 10px 20px; 
+}
+
+.instructions li::before {
+  content: counter(item) ". "; 
+  counter-increment: item;
+  position: absolute;
+  left: 0; 
+  color: hsl(14, 45%, 36%); 
+  font-weight: 600;
+}
+
+.instructions ol {
+  counter-reset: item;
+}
+
+.nutrition p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 25px;
+}
+
+.nutrition .value {
+  color: hsl(14, 45%, 36%);
+}
+
+@media (min-width: 750px) {
+
+ .container{
+  width: 60%;
+  padding: 10px 10px;
+  margin: 0 auto;
+ }
+}
